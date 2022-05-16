@@ -1,0 +1,440 @@
+@charset "utf-8";
+.wrap {width: 100%; height: 100%;}
+.conWrap {
+    position: relative;
+	display: flex;
+	width: 1200px;
+	height: auto;
+	margin: 130px auto 50px;
+}
+.conWrap_left {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+	width: 180px;
+	height: 400px;
+	padding: 15px 10px;
+	border: 1px solid #ddd;
+}
+.conWrap_left > h2 {
+	line-height: 30px;
+	font-size: 2rem;
+}
+.conWrap_left > ul {
+	width: 100%;
+	height: auto;
+	margin: 15px 0;
+}
+.conWrap_left > ul li:first-child {
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.4rem;
+}
+.conWrap_left > ul li {
+	height: 26px;
+	line-height: 26px;
+	font-size: 1.2rem;
+}
+.conWrap_left > ul li:hover {
+	font-weight: bolder;
+}
+.conWrap_right {
+	width: calc(98% - 180px); /*1000px*/
+	height: auto;
+	margin-left: 2%;
+}
+.conWrap_right h2 {font-size: 2.2rem;}
+.conWrap_right .tableWrap {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #052c69;
+    margin: 10px 0 50px;
+}
+.listWrap {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.listInner {
+    width: 100%;
+    height: auto;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #eeeeee;
+    padding: 0 10px;
+}
+.listTitle {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(36, 36, 36, 0.5);
+}
+.select {width: 10%;}
+.product {width: 50%;}
+.amount {width: 16%;}
+.total {width: 24%;}
+.listTitle .select label {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(36, 36, 36, 0.6);
+    margin-top: 17px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.listTitle .select label input {display: none;}
+.listTitle .select label span {display: none;}
+.listTitle .select label input[type="checkbox"]:checked + span {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 12px;
+    height: 8px;
+    background: url(../img/icon/check.svg) no-repeat center/cover;
+}
+.list {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    line-height: 129px;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(36, 36, 36, 0.3);
+}
+.list:last-of-type {border-bottom: none;}
+.list .select label {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(36, 36, 36, 0.6);
+    margin-top: 56px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.list .select label input {display: none;}
+.list .select label span {display: none;}
+.list .select label input[type="checkbox"]:checked + span {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 12px;
+    height: 8px;
+    background: url(../img/icon/check.svg) no-repeat center/cover;
+}
+.list .product {padding-left: 3%;}
+.list .product p {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #dddddd;
+    margin-top: 15px;
+    float: left;
+}
+.list .product p img {
+    width: 100%;
+    height: 100%;
+}
+.list .product span {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    float: left;
+}
+.list .amount {
+    display: flex;
+    height: 28px;
+    margin-top: 51px;
+}
+.list .amount button {
+    width: 28px;
+    height: 28px;
+    line-height: 1;
+    border: 1px solid #ccc;
+}
+.list .amount p {
+    width: calc(100% - 60px);
+    height: 28px;
+    line-height: 28px;
+}
+.list .total {line-height: 1.5;font-weight: bold; color: #052c69; padding-top: 42px;}
+.list .total span {font-size: 1.2rem; font-weight: normal; color: #242424;}
+.list .fee p {line-height: 130px;}
+.listWrap > button {
+    width: 80px;
+    height: 35px;
+    font-size: 1.4rem;
+    color: #333333;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #eee;
+    border:  1px solid rgba(36, 36, 36, 0.4);
+    margin-top: 20px;
+}
+.listWrap > button:hover {text-decoration: underline;}
+.totalWrap {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    word-spacing: -3px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #eeeeee;
+    margin-top: 60px;
+    padding: 36px 8%;
+}
+.right {
+    display: flex;
+    width: 67%;
+    margin-right: 3%;
+}
+.totalWrap span {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+.totalWrap p {
+    height: 35px;
+    line-height: 35px;
+}
+.plus, .minus {
+    width: 5%;
+    height: 100%;
+    color: rgba(36, 36, 36, 0.5);
+    font-size: 3.4rem;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+.totalPrice, .totalFee {width: 50%;}
+/* .discount {width: 30%}
+.discount > p {color: #e84743;} */
+.totalOrder {
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid rgba(36, 36, 36, 0.3);
+}
+.totalOrder > p {color: #052c69;}
+
+.btnWrap {
+    width: 250px;
+    height: 50px;
+    margin: 60px auto 150px;
+}
+.btnWrap button {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #052c69;
+}
+@media all and (max-width: 1280px){
+.conWrap {width: 93.75%;}
+}
+@media all and (max-width: 1000px) {
+.conWrap {margin-top: 110px;}
+.conWrap_left {display: none;}
+.conWrap_right {width: 100%; margin-left: 0;}
+}
+@media all and (max-width: 768px) {
+.conWrap{margin-top: 80px;}
+.totalWrap {
+    font-size: 2rem;
+    padding: 36px 5%;
+}
+.right {width: 70%;}
+.totalWrap span {font-size: 1.6rem;}
+.totalWrap p {font-size: 2rem;}
+.plus, .minus {padding-top: 15px;}
+.totalOrder {width: 27%;}
+.btnWrap {
+    width: 200px;
+    height: 50px;
+    margin: 50px auto 100px;
+}
+.btnWrap button {font-size: 1.8rem;}
+}
+@media all and (max-width: 580px) {
+.listTitle {font-size: 1.5rem;}
+.list {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    line-height: 129px;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(36, 36, 36, 0.3);
+}
+.select {width: 8%;}
+.product {width: 48%;}
+.amount {width: 20%;}
+.total {width: 24%;}
+.list .product {padding-left: 2%;}
+.list .product p {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+}
+.list .product span {
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+.list .amount {
+    height: 25px;
+    margin-top: 53px;
+}
+.list .amount button {
+    width: 25px;
+    height: 25px;
+}
+.list .amount p {
+    width: calc(100% - 50px);
+    height: 25px;
+    line-height: 25px;
+    font-size: 1.4rem;
+}
+.list .total {font-size: 1.2rem;}
+.list .fee p {font-size: 1.2rem;}
+.listWrap > button {
+    width: 80px;
+    height: 33px;
+    line-height: 31px;
+    font-size: 1.4rem;
+}
+.totalWrap {
+    font-size: 2rem;
+    padding: 36px 5%;
+}
+.right {width: 70%;}
+.totalWrap span {font-size: 1.4rem;}
+.totalWrap p {font-size: 1.6rem;}
+.plus, .minus {
+    font-size: 2.4rem;
+    padding-top: 20px;
+}
+.btnWrap button {font-size: 1.6rem;}
+.listTitle .select label {width: 15px; height: 15px; margin-top: 19px;}
+.listTitle .select label input[type="checkbox"]:checked + span {
+    top: 3px;
+    left: 1px;
+    width: 11px;
+    height: 7px;
+}
+.list .select label {
+    width: 15px; height: 15px;
+    margin-top: 58px;
+}
+.list .select label input[type="checkbox"]:checked + span {
+    top: 3px;
+    left: 1px;
+    width: 11px;
+    height: 7px;
+}
+}
+@media all and (max-width: 499px) {
+.listTitle {font-size: 1.3rem;}  
+.select {width: 5%;;}
+.product {width: 45%;}
+.amount {width: 25%;}
+.total {width: 25%;}
+.list .select label {
+    margin-top: 20px;
+    width: 13px;
+    height: 13px;
+}
+.list .select label input[type="checkbox"]:checked + span {
+    top: 3px;
+    left: 1px;
+    width: 9px;
+    height: 5px;
+}
+.list .product {padding-left: 0%;}
+.list .product p {
+    width: 100%;
+    height: 80px;
+    margin: 15px 5px 5px 0;
+    border: none;
+    box-shadow: none;
+}
+.list .product p img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #dddddd;
+    margin-left: 25px;
+}
+.list .product > span {
+    display: block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.3rem;
+    float: left;
+    margin-left: 25px;
+}
+.list .amount {
+    height: 20px;
+    margin-top: 55px;
+}
+.list .amount button {
+    width: 20px;
+    height: 20px;
+}
+.list .amount p {
+    width: calc(100% - 40x);
+    height: 20px;
+    line-height: 20px;
+}
+.list .total {margin-top: 5px;}
+.listWrap > button {
+    width: 80px;
+    height: 30px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.totalWrap {
+    height: 100px;
+    font-size: 1.2rem;
+    padding: 27px 1%;
+    margin-top: 40px;
+}
+.right {
+    display: flex;
+    width: 70%;
+    margin-right: 2%;
+}
+.totalWrap span {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.2rem;
+}
+.totalWrap p {
+    font-size: 1.4rem;
+    height: 25px;
+    line-height: 25px;
+}
+.plus, .minus {font-size: 1.6rem;}
+.totalOrder {width: 30%;}
+.btnWrap {
+    width: 150px;
+    height: 40px;
+    margin: 30px auto 50px;
+}
+.btnWrap button {font-size: 1.4rem;}
+}

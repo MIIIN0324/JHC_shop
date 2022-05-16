@@ -1,0 +1,336 @@
+@charset "utf-8";
+body {
+    background-color: #F8F9FA;
+}
+.wrap {
+    width: 1200px;
+    height: 735px;
+    margin: 30px auto 50px;
+    padding-top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px -10px #ccc;
+}
+.wrap h1 {
+    width: 200px;
+    height: 35.35px;
+    margin: 0 auto;
+}
+.wrap h1 img {
+    width: 100%;
+    height: 100%;
+}
+.loginWrap {
+    width: 100%;
+    height: 350px;
+    padding: 0 8.33%;
+    margin: 40px 0 50px;
+}
+.loginWrap .login {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    float: left;
+}
+.loginWrap .container { 
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    margin-top: 42px;
+}
+.loginWrap .login h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.loginWrap .login form input {
+    width: 88.88%; /*400*/
+    height: 50px;
+    font-size: 1.7rem;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.loginWrap .login form input::placeholder {color: #7e7e7e;}
+.loginWrap .login input[type="submit"] {
+    display: inline-block;
+    width: 88.88%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 1.7rem;
+    padding-left: 0;
+    background-color: #052C69; 
+}
+.loginWrap .login .save {
+    display: block;
+    width: 40%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #666666;
+    margin-left: 5.5%;
+    float: left;
+}
+.loginWrap .login .save > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+    margin-bottom: 0px;
+    margin-right: 7px;
+}
+.loginWrap .login .container a {
+    width: 40%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.4rem;
+    text-align: right;
+    color: #666666;
+    margin-right: 5.5%;
+    float: right;
+}
+.loginWrap .login .container a:hover {color: #000;}
+.loginWrap .event {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.loginWrap .event .eventInner {
+    width: 100%;
+    height: 100%;
+}
+.loginWrap .event .eventInner .eventImg {
+    position: relative;
+    width: 88.88%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.eventImg .slider1, .eventImg .slider2, .eventImg .slider3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.eventImg .slider1 {background-color: #989898;}
+.eventImg .slider2 {background-color: #f57976; display: none;}
+.eventImg .slider3 {background-color: #88abda; display: none;}
+.sliderImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.sliderImg img {
+    width: 200px;
+    height: 200px;
+}
+.eventImg span {
+    width: 50%;
+    line-height: 200px;
+    font-size: 3.6rem;
+    text-align: center;
+    color: #fff;
+    float: right;
+}
+.qn {
+    width: 83.33%; /*1000px*/
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 3%;
+    border: 1px solid #ccc;
+}
+.qn .qnLeft {
+    width: 40%;
+    float: left;
+}
+.qn .qnLeft > p {
+    width: 100%;
+    height: 65px;
+    font-size: 2.2rem;
+    margin-top: 40px;
+}
+.qn .qnLeft p > span {
+    color: #052C69;
+}
+.qn .qnRight {
+    width: 60%;
+    float: right;
+}
+.qn .qnRight > p {
+    width: 100%;/*394px*/
+    font-size: 1.4rem;
+    margin: 35px 0 15px 0;
+}
+.qn .qnRight > a {
+    width: 20%; /*200px*/
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    border: 1px solid #000;
+    
+}
+.qn .qnRight > a:hover {
+    color: #fff;
+    background-color: #052C69;
+    transition: 0.3s;
+}
+
+@media all and (max-width: 1280px) {
+.wrap {width: 93.75%;}
+
+}
+@media all and (max-width: 1000px) {
+.wrap h1 {
+    width: 200px;
+    height: 35.35px;
+}
+.sliderImg img {
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+}
+.eventImg span {font-size: 2.8rem;}
+.eventImg .slider3 span {font-size: 2.6rem;}
+.qn {
+    width: 83.33%; /*1000px*/
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 3%;
+    border: 1px solid #ccc;
+    
+}
+.qn .qnLeft {
+    width: 40%;
+    float: left;
+}
+.qn .qnLeft > p {
+    width: 100%;
+    height: 65px;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+.qn .qnLeft p > span {
+    color: #052C69;
+}
+.qn .qnRight {
+    width: 60%;
+    float: right;
+}
+.qn .qnRight > p {
+    width: 100%;/*394px*/
+    font-size: 1.4rem;
+    margin: 35px 0 15px 0;
+}
+.qn .qnRight > a {
+    width: 20%; /*200px*/
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    border: 1px solid #000;
+    
+}
+.qn .qnRight > a:hover {
+    color: #fff;
+    background-color: #052C69;
+    transition: 0.3s;
+}
+}
+@media all and (max-width: 768px) {
+.wrap {height: 681px;}
+.wrap h1 {width: 180px; height: 31px;}
+.loginWrap .login {
+    width: 100%;
+    border-right: none;
+}
+.loginWrap {height: 300px; margin: 30px 0 50px;}
+.loginWrap .event {display: none;}
+.loginWrap .container { 
+    height: 250px;
+    margin-top: 30px;
+}
+.loginWrap .login h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.loginWrap .login form input {
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.5rem;
+}
+.loginWrap .login input[type="submit"] {
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.6rem;
+}
+.loginWrap .login .save {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.3rem;
+}
+.loginWrap .login .container a {font-size: 1.3rem;}
+.qn {
+    width: 88%; /*90*/
+    height: 135px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.qn .qnLeft {width: 45%;}
+.qn .qnLeft > p {
+    width: 100%;
+    height: 65px;
+    font-size: 1.8rem;
+    margin-top: 35px;
+}
+.qn .qnRight {width: 55%;}
+.qn .qnRight > p {
+    width: 100%;/*394px*/
+    font-size: 1.2rem;
+    margin: 25px 0 10px 0;
+}
+.qn .qnRight > a {
+    width: 35%;
+    height: 30px;
+    line-height: 28px;
+}
+}
+
+@media all and (max-width: 499px) {
+.qn {
+    position: relative;
+    width: 88%;
+    height: 150px;
+    padding: 0 3%;
+}
+.qn .qnLeft {width: 100%;}
+.qn .qnLeft > p {
+    width: 100%;
+    height: 50px;
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+.qn .qnRight {width: 100%;}
+.qn .qnRight > p {
+    width: 100%;/*394px*/
+    font-size: 1.2rem;
+    margin: 15px 0 10px 0;
+}
+.qn .qnRight > a {
+    position: absolute;
+    top: 30px;
+    right: 3.5%;
+    width: 25%;
+    height: 25px;
+    line-height: 23px;
+    font-size: 1.1rem;
+} 
+}
+
+
+
+
+
+

@@ -1,0 +1,591 @@
+@charset "utf-8";
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 100px auto;
+}
+.conTop {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.conTop h2 {font-size: 2.2rem; color: #052c69;}
+.conTop .writeCaption {
+    position: relative;
+    width: 100px;
+    height: 35px;
+    line-height: 33px;
+    border: 1px solid #052c69;
+    transition: .3s;
+}
+.conTop .writeCaption a {
+    width: 100%;
+    font-size: 1.6rem;
+    color: #052c69;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1;
+}
+.conTop .writeCaption a span {
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/list_blue.svg) no-repeat center/contain;
+    margin: 7px 5px 0 0;
+    float: left;
+    z-index: 1;
+}
+.conTop .writeCaption::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #052c69;
+    transition: .3s;
+}
+.conTop .writeCaption:hover a {color: #fff;}
+.conTop .writeCaption:hover a span{background: url(../img/icon/list_white.svg) no-repeat center/contain;}
+.conTop .writeCaption:hover::after {width: 100%; z-index: -1;}
+.container form {
+    width: 100%;
+    height: auto;
+    color: #242424;
+    margin-top: 20px;
+    border-top: 2px solid #052c69;
+}
+form .dateWrap {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+form .dateWrap .write {
+    display: flex;
+    width: 50%;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.6rem;
+}
+form .dateWrap .con {
+    width: 30%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #052c69;
+}
+form .dateWrap .write .blank {width: 70%; padding-left: 15px;}
+form .proWrap, form .content {
+    display: flex;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+form .proWrap .con {
+    width: 15%;
+    height: auto;
+    line-height: 350px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #052c69;
+}
+form .proWrap .product {
+    display: flex;
+    width: 85%;
+}
+form .proWrap .product .proImg {width: 50%;}
+form .proWrap .product .proImg .fileBox {
+    position: relative;
+    width: 280px;
+    height: auto;
+    margin: 0px auto;
+}
+form .proWrap .product .proImg .fileBox .fileImgView {
+    width: 280px;
+    height: 280px;
+    border: 1px solid #bababa;
+    margin: 20px auto;
+}
+.fileBox #fileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    background: #fff;
+}
+form .proWrap .product .proImg .fileBox input[type="file"] {visibility: hidden;}
+form .proWrap .product .proImg .fileBox p {
+    width: 200px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #bababa;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+form .proWrap .product .proImg .fileBox label {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    display: block;
+    width: 70px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #052c69;
+}
+form .proWrap .product .proCon {width: 50%;}
+form .proWrap .product .proCon ul {width: 100%; padding: 40px 0;}
+form .proWrap .product .proCon ul li {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+form .proWrap .product .proCon ul li label {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+}
+form .proWrap .product .proCon ul li:first-child {position: relative;}
+form .proWrap .product .proCon ul li select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.6rem;
+    border: 1px solid #bababa;
+    padding-left: 10px;
+}
+form .proWrap .product .proCon ul li select:focus {outline: 1px solid #052c69;}
+form .proWrap .product .proCon ul li select:focus + .arrow img {transform: rotate(270deg);}
+form .proWrap .product .proCon ul li .arrow {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    width: 13px;
+    height: inherit;
+}
+form .proWrap .product .proCon ul li .arrow img {transform: rotate(90deg); transition: .3s;}
+form .proWrap .product .proCon ul li input {
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.6rem;
+    border: 1px solid #bababa;
+    padding-left: 10px;
+}
+form .proWrap .product .proCon ul li input:focus {outline: 1px solid #052c69;}
+form .proWrap .product .proCon ul li input::placeholder {color: #aaaaaa;}
+form .proWrap .title {
+    width: 15%;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #052c69;
+}
+form .proWrap .blank {
+    width: 85%;
+    height: 55px;
+    line-height: 55px;
+    padding: 10px 20px;
+}
+form .proWrap .blank input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 33px;
+    font-size: 1.6rem;
+}
+form .proWrap .blank input::placeholder,
+form .content .conInner textarea::placeholder {color: #aaaaaa;}
+form .content .con {
+    width: 15%;
+    height: 550px;
+    line-height: 550px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #052c69;
+}
+form .content .conInner {
+    width: 85%;
+    height: 550px;
+    padding: 20px;
+}
+form .content .conInner .editArea {
+    width: 100%;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+form .content .conInner textarea {
+    display: block;
+    width: 100%;
+    height: 470px;
+    font-size: 1.6rem;
+    overflow: auto;
+    padding: 10px;
+}
+form .content .conInner textarea:focus {outline: 1px solid #ddd;}
+form .btnWrap {
+    display: flex;
+    width: 330px;
+    height: 50px;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    margin: 50px auto 100px;
+}
+form .btnWrap input {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: #052c69;
+}
+form .btnWrap input[type="reset"] {
+    color: #052c69;
+    background-color: #fff;
+    border: 1px solid #052c69;
+}
+
+
+/*********** 공지사항 내용 (event_content) ***********/
+.addContainer {
+    width: 1200px;
+    height: auto;
+    margin: 180px auto 100px;
+}
+.addContainer h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    color: #052c69;
+}
+.addContainer form {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #052c69;
+    margin-top: 80px;
+}
+.addContainer form .conTitle {
+    width: 100%;
+    height: 75px;
+    padding-left: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.addContainer form .conTitle p {
+    line-height: 75px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.addContainer form .conInfo {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 20px;
+}
+.addContainer form .conInfo .conArea {
+    display: flex;
+    width: 180px;
+    line-height: 53px;
+    font-size: 1.6rem;
+    color: #777;
+}
+.addContainer form .conInfo .conArea > p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.addContainer form .content {
+    width: 100%;
+    height: auto;
+}
+.addContainer form .content .contentInner {
+    width: calc(100% - 40px);
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin: 50px auto;
+}
+.addContainer form .content .contentInner > p {margin: 10px 0;}
+.addContainer form .add_btnWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.addContainer form .add_btnWrap a {
+    position: relative;
+    width: 85px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #052c69;
+    border-radius: 10px;
+    border: 1px solid #052c69;
+    padding: 0 18px;
+    margin-left: 5px;
+}
+.addContainer form .add_btnWrap a span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-top: 13px;
+    z-index: 1;
+}
+.addContainer form .add_btnWrap a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #052c69;
+}
+.addContainer form .add_btnWrap a:first-child span {
+    background: url(../img/icon/pencil.svg) no-repeat center/contain;
+}
+.addContainer form .add_btnWrap a:nth-child(2) span {
+    background: url(../img/icon/delete.svg) no-repeat center/contain;
+}
+.addContainer form .add_btnWrap a:last-child span {
+    width: 14px;
+    height: 15px;
+    background: url(../img/icon/list_blue.svg) no-repeat center/contain;
+    margin-top: 12px;
+}
+.addContainer form .add_btnWrap a:hover {color: #fff;}
+.addContainer form .add_btnWrap a:hover::after {display: block;z-index: -1;} 
+.addContainer form .add_btnWrap a:first-child:hover span {
+    background: url(../img/icon/pencil_white.svg) no-repeat center/contain;
+}
+.addContainer form .add_btnWrap a:nth-child(2):hover span {
+    background: url(../img/icon/close_white.svg) no-repeat center/contain;
+}
+.addContainer form .add_btnWrap a:last-child:hover span {
+    background: url(../img/icon/list_white.svg) no-repeat center/contain;
+} 
+/******************** 문의사항 내용(qna_content) ********************/
+
+.qnaAnswer {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #7588a1d3;
+    margin-top: 20px;
+}
+.qnaAnswer .answerDate {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #7588a1d3;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.qnaAnswer .answerDate .answerName {
+    display: flex;
+    width: 180px;
+    line-height: 55px;
+    font-size: 1.4rem;
+    color: #052c69;
+}
+.qnaAnswer .answerDate .answerName > p,
+.qnaAnswer .answerDate .answerTime >p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.qnaAnswer .answerDate .answerTime {
+    display: flex;
+    width: 250px;
+    line-height: 55px;
+    font-size: 1.4rem;
+    color: #052c69;
+}
+.qnaAnswer .answerCon {
+    width: calc(100% - 60px);
+    height: auto;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    color: #052c69;
+    margin: 20px auto;
+}
+
+@media all and (max-width: 1280px) {
+.container { width: 93.75%; }
+.addContainer {width: 93.75%;}
+}
+@media all and (max-width: 1000px) {
+.container {margin: 80px auto;}
+.addContainer {margin: 150px auto 100px;}
+}
+@media all and (max-width: 850px) {
+form .dateWrap .write {
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.4rem;
+}
+form .proWrap .con {
+    font-size: 1.4rem;
+    line-height: 350px;
+}
+form .proWrap .product .proImg .fileBox {
+    position: relative;
+    width: 250px;
+    height: auto;
+    margin: 0px auto;
+}
+form .proWrap .product .proImg .fileBox .fileImgView{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #bababa;
+    margin: 20px auto;
+}
+form .proWrap .product .proImg .fileBox p {
+    width: 180px;
+    height: 40px;
+    line-height: 38px;
+}
+form .proWrap .product .proImg .fileBox label {
+    top: 270px;
+    width: 60px;
+}
+form .proWrap .product .proCon ul {padding: 25px 0;}
+form .proWrap .product .proCon ul li label {font-size: 1.4rem;}
+form .proWrap .product .proCon ul li select {font-size: 1.4rem;}
+form .proWrap .product .proCon ul li input {font-size: 1.4rem;}
+form .content .con {font-size: 1.4rem;}
+form .content .conInner textarea {font-size: 1.4rem;}
+}
+@media all and (max-width: 768px) {
+.container {margin: 50px auto;}
+form .dateWrap .write {
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.4rem;
+}
+form .dateWrap .con {width: 40%;}
+form .dateWrap .write .blank {width: 60%; padding-left: 10px;}
+form .proWrap .con {
+    width: 20%;
+    font-size: 1.4rem;
+    line-height: 500px;
+}
+form .proWrap .product {
+    display: block;
+    width: 80%;
+}
+form .proWrap .product .proImg {width: 100%;}
+form .proWrap .product .proImg .fileBox {
+    position: relative;
+    width: 260px;
+    height: auto;
+    margin: 0px auto;
+}
+form .proWrap .product .proImg .fileBox .fileImgView{
+    width: 260px;
+    height: 240px;
+    margin: 20px auto 10px;
+}
+form .proWrap .product .proImg .fileBox p {
+    width: 190px;
+    height: 40px;
+    line-height: 38px;
+}
+form .proWrap .product .proImg .fileBox label {
+    top: 250px;
+    width: 60px;
+}
+form .proWrap .product .proCon {width: 100%;}
+form .proWrap .product .proCon ul {width: 80%; padding: 0; margin: 10px auto;}
+form .proWrap .product .proCon ul li {
+    display: flex;
+    height: 50px;
+}
+form .proWrap .product .proCon ul li label {width: 40%;}
+form .proWrap .product .proCon ul li .arrow {top: 14px;}
+form .proWrap .title {
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+}
+form .proWrap .blank {
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+}
+form .proWrap .blank input {
+    height: 30px;
+    line-height: 28px;
+    font-size: 1.4rem;
+} 
+form .content .con {width: 20%;}
+form .content .conInner {
+    width: 80%;
+    padding: 10px;
+}
+form .content .conInner textarea {font-size: 1.4rem;}
+form .btnWrap {
+    width: 290px;
+    font-size: 1.4rem;
+    margin: 50px auto 80px;
+}
+form .btnWrap input {width: 130px;}
+
+
+/*********** 공지사항 내용 (event_content) ***********/
+.addContainer {margin: 110px auto 100px;}
+.addContainer h2 {font-size: 3rem;}
+.addContainer form {margin-top: 60px;}
+.addContainer form .conTitle {height: 60px;}
+.addContainer form .conTitle p {
+    line-height: 60px;
+    font-size: 1.6rem;
+}
+.addContainer form .conInfo {height: 50px;}
+.addContainer form .conInfo .conArea {
+    width: 150px;
+    line-height: 48px;
+    font-size: 1.4rem;
+}
+.addContainer form .content .contentInner {font-size: 1.4rem;}
+.addContainer form .add_btnWrap {margin-top: 30px;}
+.addContainer form .add_btnWrap a {
+    width: 80px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.3rem;
+    padding: 0 15px;
+}
+}
+@media all and (max-width: 499px) {
+form .proWrap .product .proCon ul {width: 90%;}
+.addContainer form .conInfo .conArea:first-of-type {width: 125px;}
+.addContainer form .conInfo .conArea {
+    width: 160px;
+    line-height: 48px;
+    font-size: 1.2rem;
+}
+.addContainer form .conInfo .conArea > p {margin-right: 3px;}
+}
+
+
+

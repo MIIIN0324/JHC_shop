@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="keywords" content="블루투스 스캐너, 프린터">
+    <meta name="description" content="물류 IT 전문기업 주식회사 제이에이치씨 쇼핑몰입니다">
+    <meta name="title" content="JHCSHOP">
+    <meta property="og:keywords" content="블루투스 스캐너, 프린터">
+    <meta property="og:description" content="물류 IT 전문기업 주식회사 제이에이치씨 쇼핑몰입니다">
+    <meta property="og:title" content="JHCSHOP">
+    <title>JHC&nbsp;:&nbsp;회원가입</title>
+    <link rel="icon" href="img/favicon_32x32_hIK_icon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><img src="img/header_JHC_logo.svg" alt="로고"></h1>
+        </header>
+        <div class="signup">
+            <h2>회원가입</h2>
+            <form action="#" name="twin">
+                <div class="sg_form">
+                    <label for="user_id"><span>&#42;</span>아이디</label>
+                    <div class="formInner idInner">
+                        <input type="text" id="user_id" name="user_id" maxlength="20" placeholder="아이디" value>
+                        <a href="#">중복확인</a>
+                    </div>
+                </div>
+                <div class="sg_form">
+                    <label for="user_pw"><span>&#42;</span>비밀번호</label>
+                    <div class="formInner">
+                        <input type="password" id="user_pw" name="user_pw" maxlength="16" onchange="checkPw()" placeholder="비밀번호" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="8~16자의 영문, 숫자 사용" value>
+                    </div>
+                </div>
+                <div class="sg_form">
+                    <label for="pw_check"><span>&#42;</span>비밀번호 확인</label>
+                    <div class="formInner">
+                        <input type="password" id="pw_check" name="pw_check" onchange="checkPw()" maxlength="16" placeholder="비밀번호 확인" value>&nbsp;&nbsp;<span id="same"></span>
+                    </div>
+                </div>
+                <div class="sg_form">
+                    <label for="user_name"><span>&#42;</span>이름</label>
+                    <div class="formInner">
+                        <input type="text" id="user_name" name="user_name" placeholder="이름" value>
+                    </div>
+                </div>
+                <div class="sg_form">
+                    <label for="user_email"><span>&#42;</span>이메일</label>
+                    <div class="formInner eInner">
+                        <input type="text" name="user_email" id="user_email" placeholder="이메일">
+                        <span>@</span>
+                        <input type="text" class="e2" name="user_email2" id="user_email2" placeholder="ex) naver.com" disabled>
+                        <select>
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="직접입력">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                        </select>
+                        <span class="arrow"><img src="img/icon/arrow_right.svg" alt="화살표"></span>
+                    </div>
+                </div>
+                <div class="sg_form">
+                    <label for="user_phone"><span>&#42;</span>휴대전화</label>
+                    <div class="formInner">
+                        <input type="tel" id="user_phone" name="user_phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="000-0000-0000">
+                    </div>
+                </div>
+                <div class="sg_form typeWrap">
+                    <p><span>&#42;</span>회원유형</p>
+                    <div class="type">
+                        <input type="radio" id="user_type" name="user_type">
+                        <label for="user_type">개인<span></span></label>
+                        <input type="radio" id="enter_type" name="user_type">
+                        <label for="enter_type">기업<span></span></label>
+                    </div>
+                </div>
+                <div class="sg_form delivery">
+                    <label for="company"><span>&#42;</span>택배사</label>
+                    <div class="formInner deInner">
+                        <select name="company" id="company" class="select">
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="CJ대한통운">CJ대한통운</option>
+                            <option value="KG로지스">KG로지스</option>
+                            <option value="건영택배">건영택배</option>
+                            <option value="로젠택배">로젠택배</option>
+                            <option value="롯데택배">롯데택배</option>
+                            <option value="일양로지스">일양로지스</option>
+                            <option value="한덱스">한덱스</option>
+                            <option value="일반회원">일반회원</option>
+                        </select>
+                        <span class="arrow"><img src="img/icon/arrow_right.svg" alt="화살표"></span>
+                    </div>
+                </div>
+
+                <div class="bizWrap">
+                    <h2>사업자 정보</h2>
+                    <div class="biz">
+                        <div class="biz_form">
+                            <label>
+                                <span>상호</span>
+                                <input type="text" name="bizName" placeholder="상호를 입력하세요">
+                            </label>
+                        </div><!--//bizName-->
+                        <div class="biz_form">
+                            <label>
+                                <span>대표자</span>
+                                <input type="text" name="rep" placeholder="대표자를 입력하세요" maxlength="10">
+                            </label>
+                        </div><!--//rep-->
+                        <div class="biz_form">
+                            <label>
+                                <span>사업자등록번호</span>
+                                <input type="text" name="reg" placeholder="'&ndash;'제외 숫자만 입력하세요">
+                            </label>
+                        </div><!--//reg-->
+                        <div class="biz_form">
+                            <label>
+                                <span>업태</span>
+                                <input type="text" name="type" placeholder="업태를 입력하세요">
+                            </label>
+                        </div><!--//type-->
+                        <div class="biz_form">
+                            <label>
+                                <span>종목</span>
+                                <input type="text" name="detailType" placeholder="종목을 입력하세요">
+                            </label>
+                        </div><!--//detailType-->
+                        <div class="address">
+                            <label for="address">주소</label>
+                                <div class="addrInner">
+                                    <div class="addrSearch">
+                                        <input type="text" id="address" placeholder="우편번호" disabled>
+                                        <button type="button" onclick="window.open('addrSearch.html');">주소검색</button>
+                                    </div>
+                                    <input type="text" placeholder="기본주소" disabled>
+                                    <input type="text" placeholder="상세주소 및 상세건물명">
+                                </div>
+                        </div><!--//addr-->
+                        <div class="biz_form">
+                            <label>
+                                <span>담당자 이름</span>
+                                <input type="text" placeholder="담당자 이름을 입력하세요">
+                            </label>
+                        </div><!--//charName-->
+                        <div class="biz_form">
+                            <label>
+                                <span>담당자 이메일</span>
+                                <input type="email" name="user_email" placeholder="담당자 이메일을 입력해주세요" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                            </label>
+                        </div><!--//charEmail-->
+                        <div class="biz_form">
+                            <label>
+                                <span>담당자 휴대전화</span>
+                                <input type="tel" name="user_phone" placeholder="000-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+                            </label>
+                        </div><!--//charPhone-->
+                    </div><!--//biz-->
+                </div><!--//bizWrap-->
+                <div class="btnWrap">
+                    <input type="reset" value="취소" onclick="location.href='login.html'">
+                    <input type="submit" onclick="check()" value="회원가입">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#enter_type').on('click', function(e){
+                var a = $("#enter_type").prop("checked");
+                if (a == true){
+                    $('.bizWrap').css('display','block');
+                }
+            });
+            
+            $('#user_type').on('click',function(e){
+                var b = $('#user_type').prop("checked");
+                if(b == true){
+                    $('.bizWrap').css('display','none');
+                }
+            });
+            
+            $('.eInner select').on('change', function(){
+                $('.eInner option:selected').each(function(){
+                    if($(this).val() == '직접입력'){
+                        $('.e2').val('');
+                        $('.e2').attr('disabled',false);
+                    } else {
+                        $('.e2').attr('disabled',true);
+                        $('.e2').val($(this).text());
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        function checkPw() {
+            var pw = document.twin.user_pw.value;
+
+            if (pw.length < 8 || pw.length > 16) {
+                window.alert('8~16자의 영문, 숫자 사용');
+                document.getElementById('user_pw').value = document.getElementById('pw_check').value='';
+                document.getElementById('same').innerHTML = '';
+            }
+            if (document.getElementById('user_pw').value !='' && document.getElementById('pw_check').value !='') {
+                if(document.getElementById('user_pw').value == document.getElementById('pw_check').value) {
+                    document.getElementById('same').innerHTML = '비밀번호가 일치합니다';
+                    document.getElementById('same').style.color = '#0958d3';
+                } else {
+                    document.getElementById('same').innerHTML = '비밀번호가 일치하지 않습니다.';
+                    document.getElementById('same').style.color = '#f43c37';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

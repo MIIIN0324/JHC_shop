@@ -1,0 +1,462 @@
+@charset "utf-8";
+body {
+    background-color: #F8F9FA;
+}
+.wrap {
+    width: 1200px;
+    height: auto;
+    margin: 30px auto 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+header {
+    width: 64%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+header h1 {
+    width: 200px;
+    height: 35.35px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+header h1 img {
+    width: 100%;
+    height: 100%;
+}
+.signup {
+    width: 70%;
+    margin: 0 auto; 
+}
+.signup h2 {font-size: 2rem;}
+.signup form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+.signup input:focus {outline: thin solid #052c69;}
+.sg_form {
+    display: inline-flex;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    border-bottom: 1px solid #eee; 
+}
+.sg_form label {
+    width: 26%;
+    height: 75px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+}
+.sg_form label span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+.sg_form .formInner {
+    display: inline-flex;
+    width: 74%;
+    padding: 15px 0;
+}
+.sg_form .formInner input {
+    width: 61.61%;
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.sg_form .formInner input::placeholder {color: #888;}
+.sg_form .formInner a {
+    width: 85px;
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.sg_form .formInner #same {
+    line-height: 50px;
+    font-size: 1.1rem;
+}
+.sg_form .eInner {
+    position: relative;
+    display: inline-flex;
+    width: 74%;
+    padding: 15px 0;
+}
+.sg_form .eInner input {
+    width: 25%;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 20px;
+    height: 45px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sg_form .eInner input:last-of-type {
+    width: 30%;
+}
+.sg_form .eInner select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30%;
+    line-height: 43px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+.sg_form .eInner .arrow {
+    position: absolute;
+    top: 31px;
+    right: 12%;
+    width: 13px;
+    height: inherit;
+}
+.eInner .arrow img {
+    transform: rotate(90deg);
+    transition: .3s;
+}
+.eInner select:focus + .arrow img {
+    transform: rotate(270deg);
+}
+.typeWrap p {
+    width: 26%;
+    height: 75px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+}
+.typeWrap p span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+.typeWrap .type {display: flex;}
+.typeWrap .type input[type="radio"] + label {
+    width: 80px;
+    height: 75px;
+    line-height: 74px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-left: 0;
+}
+.typeWrap .type input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    margin: 25px 10px 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.typeWrap .type input[type="radio"]:checked {
+    border: 5px solid #052c69;
+}
+.sg_form .deInner {
+    position: relative;
+    width: 74%;
+}
+.sg_form .deInner select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 61.61%;
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+.sg_form .deInner .arrow {
+    position: absolute;
+    top: 32px;
+    right: 41%;
+    width: 13px;
+    height: inherit;
+}
+.sg_form .deInner .arrow img {
+    transform: rotate(90deg);
+    transition: .3s;
+}
+.sg_form select:focus {outline-color: #052c69;}
+.deInner select:focus + .arrow img {
+    transform: rotate(270deg);
+}
+
+.bizWrap {
+    width: 100%;
+    margin-top: 60px;
+    display: none;
+}
+.biz {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+.biz .biz_form {
+    display: inline-flex;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    border-bottom: 1px solid #eee;
+}
+.biz .biz_form label {
+    width: 100%;
+}
+.biz .biz_form label > span {
+    width: 26%;
+    height: 75px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+    float: left;
+}
+.biz .biz_form label > input {
+    width: 45.57%;
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.biz .biz_form label > input::placeholder {color: #888;}
+.biz .address {
+    display: flex;
+    width: 100%;
+    height: 185px;
+    border-bottom: 1px solid #eee;
+}
+.biz .address label{
+    width: 26%;
+    height: 185px;
+    line-height: 75px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+}
+.address .addrInner {width: 74%;}
+.address .addrInner input {
+    width: 80%;
+    height: 45;
+    line-height: 43px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+input:disabled {background-color: #f5f5f5;}
+.address .addrInner input::placeholder {color: #888;}
+.address .addrInner .addrSearch {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+.address .addrInner .addrSearch input {
+    width: calc(80% - 95px);
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    margin-top: 0;
+}
+.address .addrInner .addrSearch button {
+    width: 85px;
+    height: 43px;
+    line-height: 41px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.signup form .btnWrap {
+    display: flex;
+    width: 350px;
+    height: 50px;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.signup form .btnWrap input {
+    width: 150px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #052c69;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #052c69;
+}
+.signup form .btnWrap input:first-child {
+    background-color: #052c69;
+    color: #fff;
+}
+@media all and (max-width: 1280px) {
+.wrap {width: 93.75%;}
+}
+@media all and (max-width: 1000px) {
+    .signup {width: 83.33%;}
+}
+@media all and (max-width: 768px) {
+header h1 {
+    width: 200px;
+    height: 35.35px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.signup h2 {font-size: 1.8rem;}
+.signup form { padding-top: 10px;
+}
+.sg_form {
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 75px;
+    border-bottom: none;
+}
+.sg_form label {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0;
+}
+.sg_form .formInner {
+    display: inline-flex;
+    width: 100%;
+    padding: 0;
+    float: left;
+}
+.sg_form .formInner input {width: 100%;}
+.sg_form .formInner input[type="password"] {width: 57%;}
+.sg_form .eInner {
+    width: 100%;
+    padding: 0;
+}
+.sg_form .eInner input {
+    width: calc(34% - 30px);
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 20px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.sg_form .eInner input:last-of-type {
+    width: 33%;
+}
+.sg_form .eInner select {
+    width: 33%;
+    height: 45px;
+}
+.sg_form .eInner .arrow {
+    top: 17px;
+    right: 15px;
+    width: 13px;
+}
+.typeWrap p {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+}
+.typeWrap .type input[type="radio"] + label {
+    height: 45px;
+    line-height: 45px;
+}
+.typeWrap .type input[type="radio"] {margin: 10px 10px 10px 0;}
+.sg_form .deInner {width: 100%;}
+.sg_form .deInner select {width: 100%;}
+.sg_form .deInner .arrow {
+    top: 17px;
+    right: 15px;
+}
+.biz {padding-top: 10px;}
+.biz .biz_form {
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid #eee;
+}
+.biz .biz_form label > span {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+}
+.biz .biz_form label > input {
+    width: 100%;
+    margin-top: 0px;
+}
+.biz .address {
+    display: block;
+    width: 100%;
+    height: 215px;
+    border-bottom: none;
+}
+.biz .address label{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+    float: left;
+}
+.address .addrInner {width: 100%;}
+.address .addrInner input {width: 100%;}
+.address .addrInner .addrSearch input {width: calc(100% - 95px);}
+.signup form .btnWrap {
+    width: 250px;
+    height: 48px;
+    margin: 40px auto;
+}
+.signup form .btnWrap input {
+    width: 110px;
+    height: 48px;
+    line-height: 46px;
+    font-size: 1.4rem;
+}
+}
+@media all and (max-width: 499px) {
+.signup {width: 90%;}
+.sg_form .formInner input[type="password"] {width: 53%;}
+.sg_form .formInner #same {font-size: 1rem;}
+.sg_form .eInner {
+    width: 100%;
+    padding: 0;
+}
+.sg_form .eInner input {
+    width: calc(33% - 22px);
+    font-size: 1.3rem;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 17px;
+    font-size: 1.3rem;
+}
+.sg_form .eInner input:last-of-type {width: 32%;}
+.sg_form .eInner select {
+    width: 35%;
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+.sg_form .eInner .arrow {
+    top: 18px;
+    right: 6px;
+    width: 11px;
+}
+}

@@ -1,0 +1,588 @@
+@charset "utf-8";
+.conWrap {
+    position: relative;
+	display: flex;
+	width: 1200px;
+	height: auto;
+	margin: 130px auto 50px;
+}
+.conWrap_left {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+	width: 180px;
+	height: 400px;
+	padding: 15px 10px;
+	border: 1px solid #ddd;
+}
+.conWrap_left > h2 {
+	line-height: 30px;
+	font-size: 2rem;
+}
+.conWrap_left > ul {
+	width: 100%;
+	height: auto;
+	margin: 15px 0;
+}
+.conWrap_left > ul li:first-child {
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.4rem;
+}
+.conWrap_left > ul li {
+	height: 26px;
+	line-height: 26px;
+	font-size: 1.2rem;
+}
+.conWrap_left > ul li:hover {
+	font-weight: bolder;
+}
+.conWrap_right {
+	width: 83.33%; /*1000px*/
+	height: auto;
+	padding: 0 10px;
+	margin-left: 1.67%;
+}
+.conWrap_right > h2 {
+	line-height: 50px;
+	font-size: 2.6rem;
+}
+.checkBox {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 130px;
+	margin: 10px 0;
+	padding: 20px 0;
+	border: 1px solid rgba(36, 36, 36, 0.5);
+}
+.checkBox label {
+	width: 15%;
+}
+.checkBox label > span {
+	display: block;
+	line-height: 30px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+}
+.checkBox .periodWrap {
+	width: 75%;
+	height: 90px;
+}
+.checkBox .periodInner {
+	width: 100%;
+	height: 50px;
+}
+.checkBox .periodInner button {
+	width: 66px;
+	height: 30px;
+    line-height: 28px;
+	font-size: 1.4rem;
+	border: 1px solid rgba(36, 36, 36, 0.6);
+	margin-right: 10px;
+}
+.checkBox .periodInner button:focus {
+	color: #fff;
+	background-color: #052c69;
+}
+.checkBox .periodWrap input[type="date"] {
+	width: 200px;
+	height: 40px;
+	font-size: 1.4rem;
+	border: 1px solid rgba(36, 36, 36, 0.6);
+	padding-left: 10px;
+	float: left;
+}
+.checkBox .periodWrap p {
+	width: 30px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 2rem;
+	font-weight: lighter;
+	text-align: center;
+	float: left;
+}
+.checkBox .checkBox_right {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	width: 10%;
+	height: 130px;
+	background-color: #052c69;
+	float: right;
+}
+.checkBox .checkBox_right button {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #fff;
+}
+.orderList_wrap {
+	width: 100%;
+	height: auto;
+	border: 1px solid rgba(36, 36, 36, 0.5);
+    margin-top: 30px;
+}
+.orderList_title {
+	display: flex;
+	height: 50px;
+	line-height: 49px;
+	text-align: center;
+	font-size: 1.5rem;
+    font-weight: 600;
+	border-bottom: 1px solid rgba(36, 36, 36, 0.5);
+}
+.orderList_title > div:first-of-type {
+	line-height: 18px;
+	padding-top: 5px;
+}
+.orderList_title > .total {word-spacing: -2px;}
+.date {width: 16%;}
+.product {width: 36%;}
+.amount {width: 10%;}
+.total {width: 16%;}
+.state {width: 22%;}
+.orderList {
+	display: flex;
+	height: 150px;
+    line-height: 149px;
+	text-align: center;
+	font-size: 1.6rem;
+	border-bottom: 1px solid rgba(36, 36, 36, 0.5);
+}
+.orderList:last-of-type {
+	border-bottom: none;
+}
+.orderList > .date {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-top: 50px;
+}
+.orderList > .product p {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #dddddd;
+    float: left;
+    margin: 25px 25px 25px 30px;
+}
+.orderList > .product p img {
+    width: 100%;
+    height: 100%;
+}
+.orderList > .product span {float: left; font-weight:500;}
+.orderList .state {
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+.orderList .state p {
+    line-height: 35px;
+    font-weight: bold;
+}
+.orderList .state button {
+    display: block;
+    width: 130px;
+    height: 30px;
+    border: 1px solid rgba(36, 36, 36, 0.6);
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+/*** 취소/교환/반품조회 페이지 ***/
+.orderList .state01 {
+    width: 22%;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+.orderList .state01 p {
+    line-height: 35px;
+    font-weight: bold;
+}
+.orderList .state01 button {
+    display: block;
+    width: 130px;
+    height: 30px;
+    border: 1px solid rgba(36, 36, 36, 0.6);
+    margin: 0 auto;
+}
+.orderList .state01 button:hover {
+    background-color: #052c69;
+    color: #fff;
+}
+.cancelBox p {margin-top: 25px;}
+/*** 취소/교환/반품조회 페이지 끝***/
+
+.orderList .state button:hover {
+    background-color: #052c69;
+    color: #fff;
+}
+.conWrap_right .btnWrap {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.conWrap_right .btnInner {
+    display: flex;
+    width: auto;
+    height: 30px;
+    margin-top: 35px;
+    align-content: center;
+    justify-content: center;
+}
+.conWrap_right .btnInner button {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cccccc;
+}
+.conWrap_right .btnInner button span {
+    font-size: 3rem;
+    line-height: 15px;
+}
+.conWrap_right .btnInner a {
+    position: relative;
+    width: 20px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 5px;
+}
+.conWrap_right .btnInner a:last-of-type {margin-right: 5px;}
+.conWrap_right .btnInner a:first-of-type::after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+@media all and (max-width: 1280px) {
+.conWrap {width: 93.75%;}
+}
+@media all and (max-width: 1000px) {
+.conWrap {margin: 100px auto 50px;}
+.conWrap_left {display: none;}
+.conWrap_right {width: 100%; margin: 0 auto;}
+}
+@media all and (max-width: 850px) {
+.conWrap_right > h2 {
+	line-height: 50px;
+	font-size: 2.4rem;
+}
+.orderList_title {font-size: 1.3rem;}
+.orderList {font-size: 1.4rem;}
+.orderList > .date {font-size: 1.3rem;}
+.orderList .state {font-size: 1.2rem;}
+.orderList .state button {width: 110px;}
+    
+/*** 취소/교환/반품조회 페이지 ***/
+.orderList .state01 {font-size: 1.2rem;}
+.orderList .state01 button {width: 110px;}
+/*** 취소/교환/반품조회 페이지 끝***/
+    
+.conWrap_right .btnInner button {
+    width: 25px;
+    height: 25px;
+}
+.conWrap_right .btnInner button span {font-size: 2.5rem;}
+.conWrap_right .btnInner a {
+    height: 25px;
+    line-height: 20px;
+    font-size: 1.4rem;
+}
+}
+@media all and (max-width: 768px) {
+.conWrap {margin: 60px auto 30px;}
+.conWrap_right {
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 10px;
+}
+.conWrap_right > h2 {
+	line-height: 40px; /*50*/
+	font-size: 2.2rem;
+}
+.checkBox {
+	width: 100%;
+	height: 115px;
+	padding: 15px 0 15px 10px;
+}
+.checkBox label {
+	width: 85%;
+    height: 30px;
+}
+.checkBox label > span {
+	font-size: 1.6rem;
+	text-align: left;
+}
+.checkBox .periodWrap {
+	width: 85%;
+	height: 35px;
+    position: absolute;
+    top: 55px;
+}
+.checkBox .periodInner {display: none;}
+.checkBox .periodWrap input[type="date"] {
+	width: 150px;
+	height: 35px;
+}
+.checkBox .periodWrap p {
+	width: 20px;
+	height: 35px;
+	line-height: 33px;
+	font-size: 1.8rem;
+}
+.checkBox .checkBox_right {
+    width: 15%;
+    height: 115px;
+}
+.orderList_title {font-size: 1.3rem;}
+.orderList {
+    font-size: 1.3rem;
+	height: 130px;
+    line-height: 129px;
+}
+.orderList > .date {
+    font-size: 1.2rem;
+    margin-top: 45px;
+}
+.orderList > .product p {
+    width: 85px;
+    height: 85px;
+    margin: 22px 10px;
+}
+.orderList > .product p img {
+    width: 100%;
+    height: 100%;
+}
+.orderList .state {font-size: 1.2rem;}
+.orderList .state p {
+    line-height: 30px;
+    font-weight: bold;
+}
+.orderList .state button {
+    width: 90px;
+    height: 25px;
+}
+    
+/*** 취소/교환/반품조회 페이지 ***/
+.orderList .state01 {font-size: 1.2rem;}
+.orderList .state01 p {
+    line-height: 30px;
+    font-weight: bold;
+}
+.orderList .state01 button {
+    width: 90px;
+    height: 25px;
+}
+.cancelBox p {margin-top: 20px;}
+/*** 취소/교환/반품조회 페이지 끝***/    
+
+}
+@media all and (max-width: 500px) {
+.conWrap {margin: 50px auto 30px;}
+.conWrap_right > h2 {font-size: 1.8rem;}
+.checkBox label > span {font-size: 1.4rem;}
+.checkBox .periodWrap {
+	width: 85%;
+	height: 35px;
+    position: absolute;
+    top: 55px;
+}
+.checkBox .periodWrap input[type="date"] {
+    font-size: 1.3rem;
+	width: 130px;
+}
+.checkBox .checkBox_right button {font-size: 1.4rem;}
+.orderList_title {font-size: 1.1rem;}
+.date {width: 17%;}
+.product {width: 32%;}
+.amount {width: 8%;}
+.total {width: 21%;}
+.state {width: 22%;}
+.orderList {font-size: 1.1rem;}
+.orderList > .date {
+    font-size: 1rem;
+    margin-top: 45px;
+}
+.orderList > .product p {
+    width: 100%;
+    height: 75px;
+    margin: 15px auto 5px;
+    border: none;
+    box-shadow: none;
+}
+.orderList > .product > span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.orderList > .product p img {
+    width: 75px;
+    height: 100%;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 5px 0 #dddddd;
+    margin: 0 auto;
+}
+.orderList .state {font-size: 1.1rem;}
+.orderList .state p {
+    line-height: 30px;
+    font-weight: bold;
+}
+.orderList .state button {
+    width: 80px;
+    height: 25px;
+}
+    
+/*** 취소/교환/반품조회 페이지 ***/
+.orderList .state01 {font-size: 1.1rem;}
+.orderList .state01 p {
+    line-height: 30px;
+    font-weight: bold;
+}
+.orderList .state01 button {
+    width: 80px;
+    height: 25px;
+}
+/*** 취소/교환/반품조회 페이지 끝***/
+    
+.conWrap_right .btnWrap {
+    width: 100%;
+    height: 100px;
+}
+.conWrap_right .btnInner {
+    display: flex;
+    width: auto;
+    height: 30px;
+    margin-top: 35px;
+    align-content: center;
+    justify-content: center;
+}
+.conWrap_right .btnInner button {
+    width: 20px;
+    height: 20px;
+}
+.conWrap_right .btnInner button span {
+    font-size: 2.2rem;
+    line-height: 10px;
+}
+.conWrap_right .btnInner a {
+    height: 20px;
+    line-height: 16px;
+    font-size: 1.2rem;
+}
+}
+@media all and (max-width: 400px) {
+.conWrap {
+    width: 100%;
+	display: flex;
+	height: auto;
+	margin: 50px auto 30px;
+}
+.conWrap_right {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 10px;
+}
+.conWrap_right > h2 {
+	line-height: 30px;
+	font-size: 1.5rem;
+}
+.checkBox {
+    height: 100px;
+    padding: 10px 0 10px 5px;
+}
+.checkBox label {height: 25px;}
+.checkBox label > span {
+	font-size: 1.3rem;
+    line-height: 25px;
+}
+.checkBox .periodWrap {
+	width: 85%;
+	height: 35px;
+    position: absolute;
+    top: 45px;
+}
+.checkBox .periodWrap input[type="date"] {
+	width: 110px;
+    height: 30px;
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+.checkBox .checkBox_right {height: 100px;}
+.checkBox .checkBox_right button {font-size: 1.2rem;}
+.orderList_title {
+    font-size: 1rem;
+    height: 40px;
+    line-height: 39px;
+    font-weight: 600;
+}
+.orderList_title > div:first-of-type {
+	line-height: 13px;
+	padding-top: 6px;
+}
+.date {width: 17%;}
+.product {width: 32%;}
+.amount {width: 8%;}
+.total {width: 21%;}
+.state {width: 22%;}
+.orderList {
+    font-size: 1rem;
+    height: 115px;
+    line-height: 119px;
+}
+.orderList > .date {
+    font-size: 1rem;
+    margin-top: 40px;
+}
+.orderList > .product p {
+    height: 70px;
+    margin: 10px auto 5px;
+}
+.orderList > .product p img {width: 70px;}
+.orderList .state {font-size: 1rem;}
+.orderList .state p {line-height: 35px;}
+.orderList .state button {
+    width: 70px;
+    height: 20px;
+}
+
+/*** 취소/교환/반품조회 페이지 ***/
+.orderList .state01 {font-size: 1rem;}
+.orderList .state01 p {line-height: 35px;}
+.orderList .state01 button {
+    width: 70px;
+    height: 20px;
+}
+.cancelBox p {margin-top: 10px;}
+/*** 취소/교환/반품조회 페이지 끝***/
+
+.conWrap_right .btnWrap {
+    width: 100%;
+    height: 100px;
+}
+.conWrap_right .btnInner button {
+    width: 20px;
+    height: 20px;
+}
+.conWrap_right .btnInner button span {
+    font-size: 2.2rem;
+    line-height: 10px;
+}
+.conWrap_right .btnInner a {
+    height: 20px;
+    line-height: 16px;
+    font-size: 1.2rem;
+}
+}

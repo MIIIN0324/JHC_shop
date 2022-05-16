@@ -1,0 +1,187 @@
+@charset "utf-8";
+.wrap {width: 100%; height: 100%;}
+.conWrap {
+    position: relative;
+	display: flex;
+	width: 1200px;
+	height: auto;
+	margin: 130px auto 50px;
+}
+.conWrap_left {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+	width: 180px;
+	height: 400px;
+	padding: 15px 10px;
+	border: 1px solid #ddd;
+}
+.conWrap_left > h2 {
+	line-height: 30px;
+	font-size: 2rem;
+}
+.conWrap_left > ul {
+	width: 100%;
+	height: auto;
+	margin: 15px 0;
+}
+.conWrap_left > ul li:first-child {
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.4rem;
+}
+.conWrap_left > ul li {
+	height: 26px;
+	line-height: 26px;
+	font-size: 1.2rem;
+}
+.conWrap_left > ul li:hover {
+	font-weight: bolder;
+}
+.conWrap_right {
+	width: calc(98% - 180px); /*1000px*/
+	height: auto;
+	margin-left: 2%;
+}
+.conWrap_right h2 {font-size: 2.2rem;}
+.conWrap_right .tableWrap {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #052c69;
+    margin: 20px 0 50px;
+}
+.conWrap_right .tableWrap .title {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    line-height: 59px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+.shippingAddr {width: 12%;}
+.name {width: 10%;}
+.address {width: 45%;}
+.phone {width: 15%;}
+.manage {width: 18%;}
+.conWrap_right .tableWrap .content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    line-height: 94px;
+    font-size: 1.4rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.date {width: 10%;}
+.card {width: 18%;}
+.card > span {
+    display: block;
+    line-height: 2;
+}
+.conWrap_right .tableWrap .content > .card {padding-top: 20px;}
+.cardno {width: 23%;}
+.cardname {width: 31%;}
+.conWrap_right .tableWrap .content > .name,
+.conWrap_right .tableWrap .content > .phone {line-height: 94px;}
+.conWrap_right .tableWrap .content > .address {text-align: left; padding: 15px 15px; line-height: 1.5;}
+.conWrap_right .tableWrap .content > .address span {font-size: 1.2rem; line-height: 1.5;}
+.conWrap_right .tableWrap .content > .manage button {
+    width: 50px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 32px;
+    transition: 0.3s;
+}
+.conWrap_right .tableWrap .content > .manage button:hover {
+    color: #fff;
+    background-color: #052c69;
+    border-color: #052c69;
+}
+.conWrap_right .tableWrap .content:nth-of-type(2) > .shippingAddr {
+    padding-top: 20px;
+    line-height: 2;
+}
+.conWrap_right .tableWrap .content:nth-of-type(2) > .shippingAddr p {
+    width: 70px;
+    height: 25px;
+    line-height: 23px;
+    font-size: 1.2rem;
+    color: #E84743;
+    border: 1px solid #E84743;
+    margin: 0 auto;
+}
+.conWrap_right .btnWrap {margin-bottom: 50px;}
+.conWrap_right .btnWrap a {
+    width: 150px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 1280px) {
+.conWrap {width: 93.75%;}
+}
+@media all and (max-width: 1000px) {
+.conWrap {margin: 110px auto 50px;}
+.conWrap_left {display: none;}
+.conWrap_right {
+	width: 100%;
+	height: auto;
+	margin-left: 0;
+}
+}
+@media all and (max-width: 768px) {
+.conWrap {
+	width: 90%;
+	margin: 80px auto 50px;
+}
+.conWrap_right .tableWrap {margin: 10px 0 50px;}
+.conWrap_right h2 {font-size: 1.8rem;}
+.conWrap_right .tableWrap .title {display: none;}
+.shippingAddr {width: 100%;}
+.name {width: 100%;}
+.address {width: 90%;}
+.phone {width: 100%;}
+.manage {width: 100%;}
+.date {width: 100%;}
+.card {width: 100%;}
+.card > span {line-height: 1.5;}
+.conWrap_right .tableWrap .content > .card {padding-top: 0px;}
+.cardno {width: 100%;}
+.cardname {width: 100%;}
+.conWrap_right .tableWrap .content {
+    display: block;
+    line-height: 2.5;
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 15px 10px 20px 10px;
+}
+.conWrap_right .tableWrap .content > .name,
+.conWrap_right .tableWrap .content > .phone {line-height: 2.5;}
+.conWrap_right .tableWrap .content > .address {padding: 0; line-height: 1.5;}
+.conWrap_right .tableWrap .content > .address span {line-height: 1.5;}
+.conWrap_right .tableWrap .content > .manage button {margin-top: 10px;}
+.conWrap_right .tableWrap .content:nth-of-type(2) > .shippingAddr {
+    padding-top: 0px;
+    line-height: 2;
+}
+.conWrap_right .tableWrap .content:nth-of-type(2) > .shippingAddr p {
+    text-align: center;
+    margin:0;
+}
+}
+
+
+
+

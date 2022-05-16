@@ -1,0 +1,287 @@
+@charset "utf-8";
+.eventWrap {
+    width: 1200px;
+    height: auto;
+    margin: 160px auto 100px;
+}
+.eventWrap h2 {
+    font-size: 3rem;
+    margin: 0 auto 60px;
+    text-align: center;
+    color: #052c69;
+}
+.eventTable {
+    width: 100%;
+    height: auto;
+}
+.eventTable .eventTitle {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    line-height: 58px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #052c69;
+    border-bottom: 1px solid #ccc;
+}
+.num {width: 13%;}
+.title {width: 50%;}
+.view {width: 15%;}
+.date {width: 22%;}
+.eventTable .content{
+    display: flex;
+    height: 60px;
+    line-height: 58px;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.eventTable .title:hover a {text-decoration: underline;}
+.eventTable .content .title a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.addCon {
+    width: 100%;
+    height: 40px;
+    margin: 30px 0 50px;
+}
+.addCon a {
+    position: relative;
+    width: 100px;
+    line-height: 38px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #052c69;
+    border: 1px solid #052c69;
+    padding: 0 15px;
+    float: right;
+    z-index: 1;
+}
+.addCon a span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/icon/pencil.svg) no-repeat center/contain;
+    float: left;
+    margin: 11px 10px 0 0;
+}
+.addCon a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #052c69;
+    transition: .3s;
+}
+.addCon a:hover {color: #fff;}
+.addCon a:hover span {
+    background: url(../img/icon/pencil_white.svg) no-repeat center/contain;
+    color: #fff;}
+.addCon a:hover::after {width: 100%; z-index: -1;}
+.btnWrap {
+    display: flex;
+    width: 210px;
+    height: 30px;
+    margin: 50px auto 0;
+    justify-content: space-between;
+}
+.btnWrap button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.btnWrap button span {
+    line-height: 15px;
+    font-size: 2.8rem;
+    color: #052c69;
+}
+.btnWrap p {
+    display: flex;
+    width: auto;
+    height: 25px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.btnWrap p a {
+    width: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+}
+.btnWrap p a:hover, .btnWrap p a:focus {border-bottom: 1px solid #242424;}
+
+
+/********** faq **********/
+.faqWrap {
+    width: 1200px;
+    height: auto;
+    margin: 160px auto 100px;
+}
+.faqWrap  h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    color: #052c69;
+    margin-bottom: 60px;
+}
+.faqInner {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #052c69;
+}
+.faqInner .faq {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    line-height: 63px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.faqInner .faq p {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+.faqInner .faq .faqBtnWrap {float: right; margin-right: 80px;}
+.faqInner .faq button {
+    width: 60px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 1.4rem;
+    color: #052c69;
+    border-radius: 5px;
+    border: 1px solid #052c69;
+    margin-right: 5px;
+    margin-top: 17px;
+}
+.faqInner .faq button:hover {
+    color: #fff;
+    background-color: #052c69;
+}
+.faqInner .faq button:last-of-type{
+    color: #777;
+    border: 1px solid #777;
+}
+.faqInner .faq button:last-of-type:hover {
+    color: #fff;
+    background-color: #777;
+}
+.faqInner .faq span {
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/arrow_right.svg) no-repeat center/cover;
+    transform: rotate(90deg);
+}
+.faqInner .faq.on span {
+    transform: rotate(270deg);
+    transition: .3s;
+}
+.faqInner .answer {
+    display: none;
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(5, 44, 105, 0.05);
+    padding: 30px 50px 50px;
+}
+.faqInner .answer p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+@media all and (max-width: 1280px) {
+.eventWrap {width: 93.75%;}
+.faqWrap {width: 93.75%;}
+}
+@media all and (max-width: 1000px) {
+.eventWrap {margin: 140px auto 100px;}
+.faqWrap {margin: 140px auto 100px;}
+}
+@media all and (max-width: 768px) {
+.eventWrap {margin: 110px auto 100px;}
+.eventWrap h2 {font-size: 2.6rem;}
+.eventTable .eventTitle {font-size: 1.6rem;}
+.eventTable .content {font-size: 1.4rem;}
+.addCon {
+    width: 100%;
+    height: 35px;
+    margin: 30px 0 50px;
+}
+.addCon a {
+    font-size: 1.2rem;
+    line-height: 33px;
+    padding: 0 18px;
+}
+.addCon a span {margin: 8px 10px 0 0;}
+
+
+/********** faq **********/
+.faqWrap {margin: 110px auto 100px;}
+.faqWrap  h2 {font-size: 3rem;}
+.faqInner .faq {
+    font-size: 1.4rem;
+    height: 60px;
+    line-height: 58px;
+}
+.faqInner .faq .faqBtnWrap {float: right; margin-right: 50px;}
+.faqInner .faq button {
+    width: 50px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 1.2rem; 
+    margin-top: 16px;
+}
+.faqInner .faq span {width: 15px; height: 15px;}
+.faqInner .answer {
+    font-size: 1.4rem;
+    padding: 30px 30px 40px;
+}
+}
+@media all and (max-width: 450px) {
+.eventWrap {margin: 100px auto 100px;}
+.eventWrap h2 {font-size: 2.4rem; margin-bottom: 50px;}
+.eventTable .eventTitle {height: 55px; line-height: 53px; font-size: 1.4rem;}
+.eventTable .content {height: 55px; line-height: 53px;font-size: 1.2rem;}
+
+
+/********** faq **********/
+.faqWrap {margin: 100px auto 100px;}
+.faqWrap  h2 {font-size: 2.8rem; margin-bottom: 50px;}
+.faqInner .faq {
+    font-size: 1.3rem;
+    padding-left: 5px;
+}
+.faqInner .faq .faqBtnWrap {float: right; margin-right: 30px;}
+.faqInner .faq button {
+    width: 45px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 1.2rem; 
+    margin-top: 16px;
+    margin-right: 0px;
+}
+.faqInner .faq span {right: 5px; width: 12px; height: 12px;}
+.faqInner .answer {
+    font-size: 1.3rem;
+    padding: 20px 20px 30px;
+}
+}
+
+
+

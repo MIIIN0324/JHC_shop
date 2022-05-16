@@ -1,0 +1,305 @@
+@charset "utf-8";
+.manageWrap {
+    width: 1200px;
+    height: auto;
+    margin: 160px auto 100px;
+}
+.manageWrap h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #052c69;
+    margin: 0 auto 60px;
+}
+.manageTop {
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+.manageTop .listDate {
+    display: flex;
+    width: 430px;
+    font-size: 1.4rem;
+}
+.manageTop .listDate label {
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.manageTop .listDate input {
+    width: 130px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #242424;
+    padding-left: 5px;
+}
+.manageTop .listDate p {
+    width: 15px;
+    line-height: 40px;
+    text-align: center;
+}
+.manageTop .listDate button {
+    width: 50px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #242424;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.manageTop .listDate button:hover, .manageTop .listDate button:focus {
+    color: #fff;
+    background-color: #052c69;
+}
+.manageTop .searchWrap {
+    width: 130px;
+    height: 40px;
+}
+.manageTop .searchWrap .searchBox {
+    display: flex;
+    width: 130px;
+    height: 40px;
+}
+.manageTop .searchWrap .searchBox input {
+    width: 90px;
+    height: 40px;
+    border-bottom: 1px solid rgba(5, 44, 105, 0.5);
+    font-size: 1.1rem;
+    color: #000;
+    padding-left: 5px;
+    float: left;
+    transition: 0.5s;
+}
+.manageTop .searchWrap .searchBox input::placeholder {color: #052c69;}
+.manageTop .searchWrap .searchBox input[type="search"]:focus {border: none; background: rgba(5, 44, 105, 0.1);}
+.manageTop .searchWrap .searchBox .icon {width: 40px; height: 40px; background-color: #eee;}
+.manageTop .searchWrap .searchBox .icon img {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 2px;
+}
+.manageTop .filter {
+    width: 80px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 1.4rem;
+    border: 1px solid #242424;
+    margin-top: 2px;
+    margin-left: auto;
+}
+.manageTop .filter select {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.manageTop .filter select:focus {outline: 1px solid #052c69;}
+.manageWrap .manageList {
+    border-top: 2px solid #052c69;
+    margin-top: 15px;
+}
+.manageWrap .manageList .listTitle {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #052c69;
+}
+.date {width: 10%;}
+.orderNo {width: 8%;}
+.customer {width: 10%;}
+.address {width: 15%;}
+.item {width: 12%;}
+.price {width: 8%;}
+.amount {width: 5%;}
+.total {width: 8%;}
+.state {width: 8%;}
+.invoiceNo {width: 16%;}
+.manageWrap .manageList .manageCon {
+    display: flex;
+    width:100%;
+    height: auto;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+.manageWrap .manageList .manageCon:nth-child(2n + 1) {background-color: rgba(5, 44, 105, 0.05);}
+.manageWrap .manageList:last-of-type {border-bottom: 1px solid #052c69;}
+.manageWrap .manageList .manageCon .item {color: #0A6ECD;}
+.manageWrap .manageList .manageCon .invoiceNo {display: flex;}
+.manageWrap .manageList .manageCon .invoiceNo input {
+    width: 75%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #242424;
+    padding-left: 5px;
+    margin-left: 1%;
+}
+.manageWrap .manageList .manageCon .invoiceNo button {
+    width: 24%;
+    font-size: 1.1rem;
+    border: 1px solid #052c69;
+}
+.manageWrap > button {
+    width: 80px;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #052c69;
+    border-radius: 5px;
+    border: 1px solid #052c69;
+    margin-top: 20px;
+    float: right;
+}
+.manageWrap > button:hover, .manageWrap > button:focus {color: #fff; background-color: #052c69;}
+.btnWrap {
+    display: flex;
+    width: 200px;
+    height: 28px;
+    margin: 50px auto 100px;
+    justify-content: space-between;
+}
+.btnWrap button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+}
+.btnWrap button span {
+    line-height: 15px;
+    font-size: 2.6rem;
+    color: #052c69;
+}
+.btnWrap p {
+    display: flex;
+    width: auto;
+    height: 25px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.btnWrap p a {
+    width: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+}
+.btnWrap p a:hover, .btnWrap p a:focus {border-bottom: 1px solid #242424;}
+
+@media all and (max-width: 1280px) {
+    .manageWrap {width: 98%;}
+}
+@media all and (max-width: 1000px) {
+    .manageWrap {margin: 140px auto 100px;}
+}
+@media all and (max-width: 768px) {
+.manageWrap {margin: 110px auto 100px;}
+.manageWrap h2 {font-size: 2.6rem;}
+.manageWrap .manageList .listTitle {
+    height: 38px;
+    line-height: 36px;
+    font-size: 1.2px;
+}
+.manageWrap .manageList .manageCon {font-size: 1.1rem;}
+.manageTop {height: 35px;}
+.manageTop .listDate label {
+    line-height: 35px;
+    font-size: 1.6rem;
+}
+.manageTop .listDate input {
+    width: 130px;
+    height: 35px;
+    line-height: 33px;
+}
+.manageTop .listDate p {line-height: 35px;}
+.manageTop .listDate button {height: 32px;}
+.manageTop .listDate p {line-height: 35px;}
+.manageTop .listDate button {height: 32px;}
+.manageTop .searchWrap {height: 35px;}
+.manageTop .searchWrap .searchBox {height: 35px;}
+.manageTop .searchWrap .searchBox input {height: 35px;}
+.manageTop .searchWrap .searchBox .icon {width: 35px; height: 35px;}
+.manageTop .filter {
+    width: 65px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+.manageTop .filter {
+    width: 65px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+}
+@media all and (max-width: 650px) {
+body {overflow-x: auto;}
+.manageWrap {width: 650px;margin: 110px auto; padding: 0 10px;}
+.manageWrap h2 {font-size: 2.6rem;}
+.manageWrap .manageList .listTitle {
+    height: 38px;
+    line-height: 36px;
+    font-size: 1.2px;
+}
+.manageWrap .manageList .manageCon {font-size: 1.1rem;}
+.manageTop {height: 35px;}
+.manageTop .listDate {width: 340px;}
+.manageTop .listDate label {
+    line-height: 35px;
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+.manageTop .listDate input {
+    width: 100px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 1.2rem;
+}
+.manageTop .listDate p {line-height: 35px;}
+.manageTop .listDate button {width: 40px;height: 32px; font-size: 1.2rem; margin-left: 5px;}
+.manageTop .filter {
+    width: 60px;
+    font-size: 1.2rem;
+}
+.manageWrap .manageList .manageCon .invoiceNo input {
+    width: 72%;
+    height: 25px;
+    padding-left: 0px;
+    margin-right: 0%;
+    margin-left: 1%;
+}
+.manageWrap .manageList .manageCon .invoiceNo button {
+    width: 27%;
+    border: 1px solid #052c69;
+}
+.manageWrap > button {width: 75px; margin-top: 15px;}
+.btnWrap {
+    display: flex;
+    width: 200px;
+    height: 25px;
+    margin: 50px auto 100px;
+    justify-content: space-between;
+}
+.btnWrap button {width: 25px; height: 25px;}
+.btnWrap button span {
+    line-height: 15px;
+    font-size: 2.6rem;
+    color: #052c69;
+}
+.btnWrap p {
+    display: flex;
+    width: auto;
+    height: 25px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.btnWrap p a {
+    width: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+}
+}
